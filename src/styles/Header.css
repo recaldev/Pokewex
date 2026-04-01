@@ -1,0 +1,72 @@
+.header {
+  background: #cc0000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.header-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+/* Pokéball icon */
+.header-pokeball {
+  display: inline-flex;
+  flex-direction: column;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2.5px solid #fff;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.pokeball-top {
+  flex: 1;
+  background: #fff;
+}
+
+.pokeball-middle {
+  height: 5px;
+  background: #fff;
+  position: relative;
+}
+
+.pokeball-middle::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background: #cc0000;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.pokeball-bottom {
+  flex: 1;
+  background: #cc0000;
+}
