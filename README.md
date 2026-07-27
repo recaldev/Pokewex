@@ -35,8 +35,8 @@ These screenshots come from the tech talk demo and show the workflow moving from
 ## Run locally
 
 ```bash
-git clone https://github.com/recaldev/pokewex.git
-cd pokewex
+git clone https://github.com/recaldev/Pokewex.git
+cd Pokewex
 npm install
 npm run dev
 ```
